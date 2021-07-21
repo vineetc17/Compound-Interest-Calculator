@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+	double P;
+	double r;
+	int t;
+	float a;
+	float v1,v2,v3;
+	
+	printf("Principal Amount = ");
+	scanf("%lf",&P);
+	
+	printf("Rate Of Interest = ");
+	scanf("%lf",&r);
+	
+	printf("Time Period (in years) = ");
+	scanf("%d",&t);
+	
+	v1 = 1+0.01*r;
+	v2 = t;
+	v3 = pow(v1,v2);
+	
+	a = P*v3;
+	
+	printf("%lf",a);
+}
